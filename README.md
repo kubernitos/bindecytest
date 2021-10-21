@@ -17,3 +17,7 @@ Table of contents:
     Contains Dockerfile and start.sh files that builds an image
     to redirect traffic on port 443.
     
+Final Docker Images:
+-------------------
+
+https://hub.docker.com/repository/docker/bsmhdevteam/redirect
