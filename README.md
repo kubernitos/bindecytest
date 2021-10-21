@@ -2,7 +2,7 @@
 **Please read the NODES.txt file to see the usage of the created images on each node.**
 
 
-__Table of contents:
+Table of contents:
 
   external node folder:
     Contains Dockerfile and start.sh files that builds an image
