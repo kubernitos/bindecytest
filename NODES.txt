@@ -1,0 +1,20 @@
+External node - (1.1.1.1):
+
+docker run --rm -d -e REDIRECT_TARGET=2.2.2.2 -p 443:443 bsmhdevteam/redirect:v443
+
+
+
+Intermeduate node - (2.2.2.2):
+(Uses the same Docker image as the External node)
+
+docker run --rm -d -e REDIRECT_TARGET=10.0.0.1 -p 443:443 bsmhdevteam/redirect:v443
+
+
+
+Internal node - (10.0.0.1):
+
+docker run --rm -d -e REDIRECT_TARGET=10.0.0.2 -p 6666:6666 bsmhdevteam/redirect:v6666
+
+
+
+Server - (10.0.0.2)
